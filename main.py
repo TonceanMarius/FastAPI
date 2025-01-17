@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from AI_functions import chatgpt, dalle
 from sqlalchemy_db import SessionLocal, engine, User
 from schema import UserSchema, UserResponseSchema
@@ -102,7 +101,7 @@ if __name__ == "__main__":
     refined_prompt = chatgpt()
     if refined_prompt:
         dalle(refined_prompt)
-=======
+
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import List, Optional
@@ -160,4 +159,3 @@ if __name__ == "__main__":
     import uvicorn
 
     uvicorn.run(app, host="127.0.0.1", port=8000)
->>>>>>> 85e3e08ecf9747716133ec334aaf8a704d1fd353
